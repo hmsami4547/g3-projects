@@ -1,0 +1,129 @@
+
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* shared styles */
+.display-flex{
+  display: flex;
+}
+.btn-primary{
+  background-color: #FF900E;
+  color: white;
+  border-radius: 8px;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+
+}
+main{
+  max-width: 1440px;
+  margin: 0px auto;
+}
+main > section {
+  margin-top: 130px;
+}
+/* nav-bar styles */
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+  color: ;
+}
+
+/* dark-2 color */
+.dark-2{
+  color: #424242;
+}
+/* dark-3 color */
+
+.dark-3{
+  color: #727272;
+}
+.nav-bar{
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-light{
+  background-color: rgba(255, 144, 14 , 0.1);
+}
+.nav-bar , .banner{
+  max-width: 1440px;
+  margin: 0px auto;
+}
+.brand{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.banner-content{
+  max-width: 850px;
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.banner-image{
+  width: 100%;
+}
+/* team and feature related style
+ */
+.teams{
+  align-items: center;
+}
+ 
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.our-features{
+  margin-left: 130px ;
+  max-width: 530px;
+}
+.black{
+color: #131313;
+}
+.orange{
+  color: #FF900E;
+}
+.feature-title{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.feature-description{
+  font-size: 16px;
+  line-height: 26px;
+}
+/* resp[onmsive media query */
+@media screen and (max-width: 690px){
+  .nav-bar , .nav-link , .teams{
+    flex-direction: column;
+  }
+  .team-img-container{
+    grid-template-columns: repeat( 1, 1fr);
+  }
+  .our-features{
+    margin-left: 10px;
+  }
+}
+
+/* for medium device */
+@media screen and (min-width: 680px) and (max-width: 992px){
+  .teams{
+    flex-direction: column;
+  }
+  .our-features{
+    margin-left: 20px;
+  }
+}
